@@ -48,7 +48,7 @@ AMDI({ cmd: "tagall", desc: Lang.tagallDESC, example: Lang.tagallEX, type: "prim
             allGroupMembers.forEach(data => {
                 memberMSG += '║ 👤 @' + data.split('@')[0] + '\n';
             });
-            const allTAGMSG = `╔════════════════\n║ *📧 Group Participants 📧*\n║ \n${adminMSG}${memberMSG}╚════════════════\n${footerTXT}`
+            const allTAGMSG = `╔════════════════\n║ *📧 منشن جماعي 📧*\n║ \n${adminMSG}${memberMSG}╚════════════════\n${footerTXT}`
             return await sendText(allTAGMSG, { mentionJIDS: allGroupParticipants, reactEmoji: "✅" });
         };
 
